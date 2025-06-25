@@ -1,0 +1,41 @@
+/* estilos Head ------------------------------------------------------*/
+
+h1{
+    color: blue;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* estilos del nav */
+a{
+    text-decoration: none;
+    color: rgb(8, 11, 223);
+}
+
+li{
+    list-style-type: none;
+}
+
+/* estilos main y footer--------------------------------------------------*/
+h2{
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+}
+h3{
+    color: red;
+    font-family: "Nunito Sans", sans-serif;
+}
+p{
+   font-family: "Nunito Sans", sans-serif; 
+}
+/* Imagen de fondo */
+.imagen-index{
+    width: 1000px;
+}
+.acercade{
+    width: 1000px;
+}
+/* LI de formulario */
+.liform{
+    list-style-type: square;
+}
