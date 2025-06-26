@@ -12,8 +12,15 @@
 }
 
 /* estilos main y footer generales-------------------------------------------*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 main{
-    margin: 10px
+    flex: 1;
+    margin: 10px;
 }
 
 footer{
@@ -21,7 +28,11 @@ footer{
     padding: 20px;
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
+    position: static;
+    width: 100%;
+    margin-top: 20px;
 }
+
 .subtitulo{
     color: black;
     font-family: "Nunito Sans", sans-serif;
@@ -96,7 +107,6 @@ p{
     align-self: start;
 }
 
-
 /* estilos de formulario */
 .subtitulo-formulario{
     font-family: "Nunito Sans", sans-serif;
@@ -125,7 +135,7 @@ p{
     list-style-type: square;
 }
 
-/* Estilos para formularios modernos y limpios */
+/* Estilos para formulario */
 .contenedor-formulario{
     width: 100%;
     max-width: none;
