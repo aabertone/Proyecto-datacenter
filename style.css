@@ -1,46 +1,48 @@
 /* estilos Head ------------------------------------------------------*/
 
-h1{
+.titulo{
     color: blue;
     text-align: center;
     font-family: "Nunito Sans", sans-serif;
+    border: 2px solid #323333;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin: 10px auto;
+    width: fit-content;
 }
 
 /* estilos del nav */
-.barranav{
-    display: flex;
-    padding: 0;
-    
-}
-a{
-    text-decoration: none;
-    color: rgb(8, 11, 223);
-}
 
-li{
-    list-style-type: none;
+
+/* estilos main y footer--------------------------------------------------*/
+main{
     margin: 10px
 }
 
-/* estilos main y footer--------------------------------------------------*/
-h2{
-    color: black;
+footer{
+    background-color: #979292;
+    padding: 20px;
+    text-align: center;
     font-family: "Nunito Sans", sans-serif;
 }
-h3{
+.subtitulo{
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: larger;
+    text-align: center;
+    margin-top: 10px;
+}
+.titulo-footer{
     color: red;
     font-family: "Nunito Sans", sans-serif;
 }
 p{
    font-family: "Nunito Sans", sans-serif; 
 }
-/* Imagen de fondo */
+
+/* estilo imagen index */
 .imagen-index{
-    display: flex;
-    justify-content: center;
-}
-.imagen-index-foto{
-    width: 1000px;
+    margin: 10px;
 }
 .acercade{
     width: 1000px;
