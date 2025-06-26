@@ -7,6 +7,11 @@ h1{
 }
 
 /* estilos del nav */
+.barranav{
+    display: flex;
+    padding: 0;
+    
+}
 a{
     text-decoration: none;
     color: rgb(8, 11, 223);
@@ -14,6 +19,7 @@ a{
 
 li{
     list-style-type: none;
+    margin: 10px
 }
 
 /* estilos main y footer--------------------------------------------------*/
@@ -30,6 +36,10 @@ p{
 }
 /* Imagen de fondo */
 .imagen-index{
+    display: flex;
+    justify-content: center;
+}
+.imagen-index-foto{
     width: 1000px;
 }
 .acercade{
@@ -39,3 +49,6 @@ p{
 .liform{
     list-style-type: square;
 }
+
+
+
