@@ -1,5 +1,5 @@
 @use "../Utilites/mixins";
-@import "../Base/tipografia";
+@use "../Base/tipografia" as *;
 
 .subtitulo{
     color: black;

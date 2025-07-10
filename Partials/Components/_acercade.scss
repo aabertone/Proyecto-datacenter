@@ -1,5 +1,5 @@
-@import "../Base/tipografia";
-@import "../Utilites/variables";
+@use "../Base/tipografia" as *;
+@use "../Utilites/variables" as *;
 
 
 .acercade-section{

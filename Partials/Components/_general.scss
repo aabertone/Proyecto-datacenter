@@ -1,4 +1,4 @@
-@import "../Base/tipografia";
+@use "../Base/tipografia" as *;
 
 .titulo{
     text-align: center;
