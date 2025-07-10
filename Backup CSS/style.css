@@ -1,0 +1,284 @@
+/* estilos Head ------------------------------------------------------*/
+
+.titulo{
+    color: blue;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    border: 2px solid #323333;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+/* estilos main y footer generales-------------------------------------------*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    margin: 10px;
+}
+
+footer{
+    background-color: #979292;
+    padding: 20px;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.subtitulo{
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: larger;
+    text-align: center;
+    margin-top: 10px;
+    grid-area: subtitulo;
+}
+.titulo-footer{
+    color: red;
+    font-family: "Nunito Sans", sans-serif;
+}
+p{
+   font-family: "Nunito Sans", sans-serif; 
+}
+
+/* estilo imagen index */
+
+.imagen-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.foto-index {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.acercade{
+    width: 1000px;
+}
+
+/* estilos pagina acerca de */
+.acercade-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "subtitulo-acercade subtitulo-acercade"
+        "texto-acercade imagen-acercade";
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.subtitulo-acercade{
+    grid-area: subtitulo-acercade;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.texto-acercade{
+    grid-area: texto-acercade;
+    font-family: "Nunito Sans", sans-serif;
+    align-self: start;
+}
+
+.imagen-acercade{
+    grid-area: imagen-acercade;
+    width: 100%;
+    max-width: 500px;
+    justify-self: end;
+    align-self: start;
+}
+.info-imagenes{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px
+}
+.info-imagenes p{
+    text-align: center;
+}
+.info-imagenes h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.info-imagenes img{
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;;
+}
+/* estilos de formulario */
+.subtitulo-formulario{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.contenedor-g-formulario{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.descripcion-form{
+    width: 70%;
+    max-width: none;
+}
+.titulo-formulario{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+/* LI de formulario */
+.liform{
+    list-style-type: square;
+}
+
+/* Estilos para formulario */
+.contenedor-formulario{
+    width: 100%;
+    max-width: none;
+    border: 2px solid #323333;
+}
+
+.formulario {
+    width: 100%;
+    max-width: none;
+    margin: 10px auto;
+    padding: 24px 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.formulario label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #222;
+}
+.formulario input,
+.formulario textarea,
+.formulario select {
+    padding: 10px 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background: #fff;
+    transition: border 0.2s;
+}
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border: 1.5px solid #2a7ae2;
+    outline: none;
+}
+.formulario button, .formulario input[type="submit"] {
+    background: #2a7ae2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.formulario button:hover, .formulario input[type="submit"]:hover {
+    background: #1a4e8a;
+}
+/* estilos de pagina imagenes */
+.carousel-control-prev-icon{
+    background-color: rgb(25, 35, 185);
+    border-radius: 100%;
+    padding: 20px;
+}
+.carousel-control-next-icon{
+    background-color: rgb(25, 35, 185);
+    border-radius: 100%;
+    padding: 20px
+}
+.titulo-imagenes{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+
+/* estilos contacto */
+.contenedor-contacto{
+    display: flex;
+}
+.contacto-izquierdo{
+    width: 50%;
+    border-right: 1px solid #323333;
+    
+}
+.contacto-derecho{
+    width: 50%;
+    padding: 10px;
+}
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+.iconos-link{
+    width: 10%
+}
+
+
+@media (max-width: 768px) {
+    .acercade-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "subtitulo-acercade"
+            "texto-acercade"
+            "imagen-acercade";
+    }
+    .imagen-acercade {
+        justify-self: center;
+        max-width: 90vw;
+    }
+    .contenedor-g-formulario{
+        flex-direction: column;
+    }
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+    .contacto-izquierdo{
+        border-right: none;
+        border-bottom: 1px solid #323333;
+        width: 100%;    
+    }
+    .contacto-derecho{
+        width: 100%;
+        }
+}

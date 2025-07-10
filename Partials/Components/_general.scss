@@ -1,0 +1,45 @@
+@import "../Base/tipografia";
+
+.titulo{
+    text-align: center;
+    font-family: $tipografia;
+    border: 2px solid #323333;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin: 10px auto;
+    width: fit-content;
+    & a{
+        color: blue;
+        text-decoration: none;
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    margin: 10px;
+}
+
+footer{
+    background-color: #979292;
+    padding: 20px;
+    text-align: center;
+    font-family: $tipografia;
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.titulo-footer{
+    color: red;
+    font-family: $tipografia;
+}
+
+p{
+   font-family: $tipografia; 
+}

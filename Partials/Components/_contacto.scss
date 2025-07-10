@@ -1,0 +1,22 @@
+@use "../Utilites/mixins";
+
+.contenedor-contacto{
+    display: flex;
+}
+.contacto-izquierdo{
+    width: 50%;
+    border-right: 1px solid #323333;
+    
+}
+.contacto-derecho{
+    width: 50%;
+    padding: 10px;
+}
+.iconos {
+   @include mixins.flex(row, space-around, center);
+    width: 100%;
+    gap: 16px;
+}
+.iconos-link{
+    width: 10%
+}

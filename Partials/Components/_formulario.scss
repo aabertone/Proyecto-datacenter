@@ -1,0 +1,85 @@
+@import "../Base/tipografia";
+@import "../Utilites/variables";
+
+.subtitulo-formulario{
+    font-family: $tipografia;
+    font-size: $fuente;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.contenedor-g-formulario{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.descripcion-form{
+    width: 70%;
+    max-width: none;
+}
+.titulo-formulario{
+    font-size: $fuente;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+/* LI de formulario */
+.liform{
+    list-style-type: square;
+}
+
+/* Estilos para formulario */
+.contenedor-formulario{
+    width: 100%;
+    max-width: none;
+    border: 2px solid #323333;
+}
+
+.formulario {
+    width: 100%;
+    max-width: none;
+    margin: 10px auto;
+    padding: 24px 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.formulario label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #222;
+}
+.formulario input,
+.formulario textarea,
+.formulario select {
+    padding: 10px 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background: #fff;
+    transition: border 0.2s;
+}
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border: 1.5px solid #2a7ae2;
+    outline: none;
+}
+.formulario button, .formulario input[type="submit"] {
+    background: #2a7ae2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.formulario button:hover, .formulario input[type="submit"]:hover {
+    background: #1a4e8a;
+}

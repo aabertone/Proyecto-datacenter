@@ -1,0 +1,19 @@
+@import "../Utilites/variables";
+
+.subtitulo-imagenes{
+    text-align: center;
+    
+}
+.carousel-control-prev-icon{
+    background-color: rgb(25, 35, 185);
+    border-radius: 100%;
+    padding: 20px;
+}
+.carousel-control-next-icon{
+    @extend .carousel-control-prev-icon;
+}
+.titulo-imagenes{
+    text-align: center;
+    font-size: $fuente;
+    margin-top: 10px;
+}
