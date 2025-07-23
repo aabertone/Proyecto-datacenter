@@ -1,0 +1,30 @@
+@use "../Utilites/variables" as *;
+
+@media (max-width: 768px) {
+    .acercade-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "subtitulo-acercade"
+            "texto-acercade"
+            "imagen-acercade";
+    }
+    .imagen-acercade {
+        justify-self: center;
+        max-width: 90vw;
+    }
+    .contenedor-g-formulario{
+        flex-direction: column;
+    }
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+    .contacto-izquierdo{
+        border-right: none;
+        border-bottom: 1px solid #323333;
+        width: $width;    
+    }
+    .contacto-derecho{
+        width: $width;
+        }
+}

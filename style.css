@@ -11,10 +11,14 @@
   padding: 16px 24px;
   margin: 10px auto;
   width: fit-content;
+  transition: transform 0.5s;
 }
 .titulo a {
   color: blue;
   text-decoration: none;
+}
+.titulo:hover {
+  transform: scale(1.1);
 }
 
 body {
@@ -211,7 +215,7 @@ p {
   font-size: 1em;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
 }
 
 .formulario button:hover, .formulario input[type=submit]:hover {
@@ -259,6 +263,13 @@ p {
 
 .iconos-link {
   width: 10%;
+}
+
+.icon {
+  transition: transform 0.2s;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {

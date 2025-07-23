@@ -1,11 +1,12 @@
 @use "../Utilites/mixins";
 @use "../Base/tipografia" as *;
+@use "../Utilites/variables" as *;
 
 .subtitulo{
     color: black;
     font-family: $tipografia;
     font-size: larger;
-    text-align: center;
+    text-align: $alineacion;
     margin-top: 10px;
 }
 
@@ -19,5 +20,5 @@
     width: 100%;
     max-width: 1000px;
     height: auto;
-    margin: 0 auto;
+    margin: $margen;
 }

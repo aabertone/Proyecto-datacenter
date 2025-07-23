@@ -11,16 +11,16 @@
         "texto-acercade imagen-acercade";
     gap: 24px;
     align-items: start;
-    width: 100%;
+    width: $width;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: $margen;
 }
 
 .subtitulo-acercade{
     grid-area: subtitulo-acercade;
     font-family: $tipografia;
     font-size: $fuente;
-    text-align: center;
+    text-align: $alineacion;
     margin: 10px 0 0 0;
 }
 
@@ -32,7 +32,7 @@
 
 .imagen-acercade{
     grid-area: imagen-acercade;
-    width: 100%;
+    width: $width;
     max-width: 500px;
     justify-self: end;
     align-self: start;
@@ -40,20 +40,20 @@
 .info-imagenes{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
+    margin: $margen;
+    width: $width;
     max-width: 1100px;
-        & p{text-align: center;}
+        & p{text-align: $alineacion;}
         & h2{
-        text-align: center;
+        text-align: $alineacion;
         font-size: $fuente;
         margin: 20px;
         }
         & img{
             display: block;
-            width: 100%;
+            width: $width;
             max-width: 1000px;
             height: auto;
-            margin: 0 auto;
+            margin: $margen;
         }
     }

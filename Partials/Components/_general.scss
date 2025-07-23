@@ -1,16 +1,21 @@
 @use "../Base/tipografia" as *;
+@use "../Utilites/variables" as *;
 
 .titulo{
-    text-align: center;
+    text-align: $alineacion;
     font-family: $tipografia;
     border: 2px solid #323333;
     border-radius: 10px;
     padding: 16px 24px;
     margin: 10px auto;
     width: fit-content;
+    transition: transform 0.5s;
     & a{
         color: blue;
         text-decoration: none;
+    }
+    &:hover{
+        transform: scale(1.1);
     }
 }
 
@@ -28,10 +33,10 @@ main{
 footer{
     background-color: #979292;
     padding: 20px;
-    text-align: center;
+    text-align: $alineacion;
     font-family: $tipografia;
     position: static;
-    width: 100%;
+    width: $width;
     margin-top: 20px;
 }
 

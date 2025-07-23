@@ -4,7 +4,7 @@
 .subtitulo-formulario{
     font-family: $tipografia;
     font-size: $fuente;
-    text-align: center;
+    text-align: $alineacion;
     margin: 10px 0 0 0;
 }
 .contenedor-g-formulario{
@@ -19,7 +19,7 @@
 }
 .titulo-formulario{
     font-size: $fuente;
-    text-align: center;
+    text-align: $alineacion;
     margin: 10px 0 0 0;
 }
 
@@ -30,13 +30,13 @@
 
 /* Estilos para formulario */
 .contenedor-formulario{
-    width: 100%;
+    width: $width;
     max-width: none;
     border: 2px solid #323333;
 }
 
 .formulario {
-    width: 100%;
+    width: $width;
     max-width: none;
     margin: 10px auto;
     padding: 24px 20px;
@@ -78,7 +78,7 @@
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background-color 0.2s;
 }
 .formulario button:hover, .formulario input[type="submit"]:hover {
     background: #1a4e8a;

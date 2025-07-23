@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -47,17 +48,17 @@
     
     <main>
         <section class="acercade-section">
-            <h2 class="subtitulo-acercade">Acerca de nosotros</h2>
-            <p class="texto-acercade">Somos una entidad dedicada a la formacion y distribución de informacion acerca de Data centers, con mas de 12 años de experiencia en el mercado te invitamos a recibir nuestro newsletter semanal anotandote a nuestro formulario, o si prefieres solo mirar adelante, te dejamos en la seccion de <a href="imagenes.html">imagenes</a> un monton de fotos para que disfrutes de la experiencia, ¡que te diviertas!</p>
-            <img class="imagen-acercade" src="../Fotos/acercade.jpg" alt="foto data">
+            <h2 class="subtitulo-acercade" data-aos="fade-up" data-aos-duration="3000">Acerca de nosotros</h2>
+            <p class="texto-acercade" data-aos="fade-right" data-aos-duration="3000">Somos una entidad dedicada a la formacion y distribución de informacion acerca de Data centers, con mas de 12 años de experiencia en el mercado te invitamos a recibir nuestro newsletter semanal anotandote a nuestro formulario, o si prefieres solo mirar adelante, te dejamos en la seccion de <a href="imagenes.html">imagenes</a> un monton de fotos para que disfrutes de la experiencia, ¡que te diviertas!</p>
+            <img class="imagen-acercade" src="../Fotos/acercade.jpg" alt="foto data" data-aos="fade-left" data-aos-duration="3000">
         </section>
         <div class="info-imagenes">
-            <h2>Informacion adicional</h2>
-            <p>Así es como funciona el normal flujo de aire de un datacenter</p>
-            <img src="../Fotos/Flujo.png" alt="" class="img-fluid">
-            <p>¿pero que pasa cuando el flujo se obstruye?</p>
-            <img src="../Fotos/HotSpots.jpg" alt="">
-            <p>Como nos muestra la imagen de arriba se presentan puntos calientes, es por eso que es muy importante en un data center siempre tener en cuenta el buen manejo de flujo, para saber como puedes hacer para evitar estos problemas de flujo, suscribete a nuestro <a href="formulario.html">newsletter</a> donde podrás ver mas contenido y soluciones especificas</p>
+            <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">Informacion adicional</h2>
+            <p data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000">Así es como funciona el normal flujo de aire de un datacenter</p>
+            <img src="../Fotos/Flujo.png" alt="" class="img-fluid" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="1000">
+            <p data-aos="fade-left" data-aos-duration="3000">¿pero que pasa cuando el flujo se obstruye?</p>
+            <img src="../Fotos/HotSpots.jpg" alt="" data-aos="zoom-in" data-aos-duration="3000">
+            <p data-aos="fade-up" data-aos-duration="3000">Como nos muestra la imagen de arriba se presentan puntos calientes, es por eso que es muy importante en un data center siempre tener en cuenta el buen manejo de flujo, para saber como puedes hacer para evitar estos problemas de flujo, suscribete a nuestro <a href="formulario.html">newsletter</a> donde podrás ver mas contenido y soluciones especificas</p>
         </div>
     </main>
     
@@ -69,5 +70,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

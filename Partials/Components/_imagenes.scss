@@ -1,7 +1,7 @@
 @use "../Utilites/variables" as *;
 
 .subtitulo-imagenes{
-    text-align: center;
+    text-align: $alineacion;
     
 }
 .carousel-control-prev-icon{
@@ -13,7 +13,7 @@
     @extend .carousel-control-prev-icon;
 }
 .titulo-imagenes{
-    text-align: center;
+    text-align: $alineacion;
     font-size: $fuente;
     margin-top: 10px;
 }

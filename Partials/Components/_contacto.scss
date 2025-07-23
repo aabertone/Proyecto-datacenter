@@ -1,4 +1,5 @@
 @use "../Utilites/mixins";
+@use "../Utilites/variables" as *;
 
 .contenedor-contacto{
     display: flex;
@@ -14,9 +15,15 @@
 }
 .iconos {
    @include mixins.flex(row, space-around, center);
-    width: 100%;
-    gap: 16px;
+    width: $width;
+    gap: 16px;    
 }
 .iconos-link{
-    width: 10%
+    width: 10%;
+}
+.icon{
+    transition: transform 0.2s;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
