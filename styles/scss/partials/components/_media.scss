@@ -29,12 +29,11 @@
         }
     .info1{
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
             "info1-text"
+            "info1-img"
             "info2-text"
-            "info2-img"
-            "info3-text"
-            "info3-img";
+            "info2-img";
     }
 }

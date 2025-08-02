@@ -137,6 +137,16 @@ p {
   margin: 20px auto;
 }
 
+.info-gen h3 {
+  text-align: center;
+}
+.info-gen p {
+  text-align: center;
+}
+.info-gen li {
+  margin: 10px;
+}
+
 .info1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -352,8 +362,8 @@ p {
   }
   .info1 {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "info1-text" "info2-text" "info2-img" "info3-text" "info3-img";
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "info1-text" "info1-img" "info2-text" "info2-img";
   }
 }
 

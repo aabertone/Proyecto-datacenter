@@ -5,7 +5,17 @@
     text-align: $alineacion;
     margin: 20px auto;      
 }
-
+.info-gen {
+    & h3{
+        text-align: $alineacion;
+    }
+    & p {
+        text-align: $alineacion;
+    }
+    & li{
+        margin: 10px;
+    }
+}
 .info1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,7 +29,7 @@
 .info1-text {
     grid-area: info1-text;
     margin-top: 100px;
-    margin-left: 10px;;
+    margin-left: 10px;
 }
 .info2-text{
     grid-area: info2-text;
@@ -33,8 +43,7 @@
     grid-area: info2-img;
     max-width: 90%;
 }
-
-.info3-text, .info4-text, .info5-text, .info6-text, {
+.info3-text, .info4-text, .info5-text, .info6-text {
     text-align: $alineacion;
     margin-top: 10px;
 }
