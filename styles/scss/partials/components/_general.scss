@@ -3,7 +3,6 @@
 
 .titulo{
     text-align: $alineacion;
-    font-family: $tipografia;
     border: 2px solid #323333;
     border-radius: 10px;
     padding: 16px 24px;
@@ -20,9 +19,7 @@
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: $tipografia;
 }
 
 main{
@@ -47,4 +44,7 @@ footer{
 
 p{
    font-family: $tipografia; 
+}
+.barranav{
+    background-color: rgb(34, 34, 34);
 }

@@ -27,4 +27,14 @@
     .contacto-derecho{
         width: $width;
         }
+    .info1{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "info1-text"
+            "info2-text"
+            "info2-img"
+            "info3-text"
+            "info3-img";
+    }
 }

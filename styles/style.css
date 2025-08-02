@@ -5,7 +5,6 @@
 
 .titulo {
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
   border: 2px solid #323333;
   border-radius: 10px;
   padding: 16px 24px;
@@ -22,9 +21,7 @@
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: "nunito-sans", sans-serif;
 }
 
 main {
@@ -36,7 +33,7 @@ footer {
   background-color: #979292;
   padding: 20px;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito-sans", sans-serif;
   position: static;
   width: 100%;
   margin-top: 20px;
@@ -44,16 +41,20 @@ footer {
 
 .titulo-footer {
   color: red;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito-sans", sans-serif;
 }
 
 p {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito-sans", sans-serif;
+}
+
+.barranav {
+  background-color: rgb(34, 34, 34);
 }
 
 .subtitulo {
   color: black;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito-sans", sans-serif;
   font-size: larger;
   text-align: center;
   margin-top: 10px;
@@ -90,7 +91,6 @@ p {
 
 .subtitulo-acercade {
   grid-area: subtitulo-acercade;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5em;
   text-align: center;
   margin: 10px 0 0 0;
@@ -98,7 +98,6 @@ p {
 
 .texto-acercade {
   grid-area: texto-acercade;
-  font-family: "Nunito Sans", sans-serif;
   align-self: start;
 }
 
@@ -118,7 +117,7 @@ p {
   max-width: 1100px;
 }
 .info-imagenes p {
-  text-align: center;
+  text-align: justify;
 }
 .info-imagenes h2 {
   text-align: center;
@@ -133,8 +132,80 @@ p {
   margin: 0 auto;
 }
 
+.titulo-info {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.info1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "info1-text info1-text" "info2-text info2-img" "info3-text info3-img";
+  gap: 20px;
+  align-items: start;
+}
+
+.info1-text {
+  grid-area: info1-text;
+  text-align: center;
+}
+
+.info2-text {
+  grid-area: info2-text;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.info3-text {
+  grid-area: info3-text;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.info1-img {
+  grid-area: info1-img;
+}
+
+.info2-img {
+  grid-area: info2-img;
+}
+
+.info3-img {
+  grid-area: info3-img;
+  max-width: 90%;
+}
+
+.info4-text, .info5-text, .info6-text, .info7-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.info5-img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.subtitulo-imagenes {
+  text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgb(25, 35, 185);
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.titulo-imagenes {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
 .subtitulo-formulario {
-  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5em;
   text-align: center;
   margin: 10px 0 0 0;
@@ -222,22 +293,6 @@ p {
   background: #1a4e8a;
 }
 
-.subtitulo-imagenes {
-  text-align: center;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgb(25, 35, 185);
-  border-radius: 100%;
-  padding: 20px;
-}
-
-.titulo-imagenes {
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 10px;
-}
-
 .contenedor-contacto {
   display: flex;
 }
@@ -248,7 +303,7 @@ p {
 }
 
 .contacto-derecho {
-  width: 50%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -270,6 +325,14 @@ p {
 }
 .icon:hover {
   transform: scale(1.2);
+}
+
+.iconc {
+  color: #2a7ae2;
+  transition: background-color 0.5s, color 0.5s;
+}
+.iconc:hover {
+  color: red;
 }
 
 @media (max-width: 768px) {
@@ -295,6 +358,11 @@ p {
   }
   .contacto-derecho {
     width: 100%;
+  }
+  .info1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "info1-text" "info2-text" "info2-img" "info3-text" "info3-img";
   }
 }
 

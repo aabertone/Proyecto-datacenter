@@ -1,8 +1,7 @@
-@use "../Base/tipografia" as *;
+@use "../Utilites/mixins";
 @use "../Utilites/variables" as *;
 
 .subtitulo-formulario{
-    font-family: $tipografia;
     font-size: $fuente;
     text-align: $alineacion;
     margin: 10px 0 0 0;
@@ -66,11 +65,11 @@
 .formulario input:focus,
 .formulario textarea:focus,
 .formulario select:focus {
-    border: 1.5px solid #2a7ae2;
+    border: 1.5px solid $color-boton;
     outline: none;
 }
 .formulario button, .formulario input[type="submit"] {
-    background: #2a7ae2;
+    background: $color-boton;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -83,3 +82,38 @@
 .formulario button:hover, .formulario input[type="submit"]:hover {
     background: #1a4e8a;
 }
+
+.contenedor-contacto{
+    display: flex;
+}
+.contacto-izquierdo{
+    width: 50%;
+    border-right: 1px solid #323333;
+    
+}
+.contacto-derecho{
+    width: 100%;
+    padding: 10px;
+}
+.iconos {
+   @include mixins.flex(row, space-around, center);
+    width: $width;
+    gap: 16px;    
+}
+.iconos-link{
+    width: 10%; 
+}
+.icon{
+    transition: transform 0.2s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.iconc{
+    color: $color-boton;
+    transition: background-color 0.5s, color 0.5s;
+    &:hover{
+        color: red;
+    }
+}
+
