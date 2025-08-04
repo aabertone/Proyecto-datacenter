@@ -25,7 +25,8 @@
 .info-gen6 {
     @include mixins.info-style($color-banners, $info-color3);
     width: 100%;
-    border-radius: 0; 
+    border-radius: 0;
+    color: black; 
 }
 .info1{
     display: grid;
@@ -81,7 +82,8 @@
     @include mixins.info-style($color-banners, $info-color3);
     width: 100%;
     border-radius: 0;
-    text-align: $alineacion; 
+    text-align: $alineacion;
+    color: black 
 }
 .info5-text {
     @include mixins.info-style($info-color2, $info-color3);

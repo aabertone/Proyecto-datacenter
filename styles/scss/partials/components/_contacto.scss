@@ -30,7 +30,12 @@
 .contenedor-formulario{
     width: $width;
     max-width: none;
-    border: 2px solid #323333;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    & h3{
+        color: black;
+    }
 }
 .formulario {
     width: $width;
@@ -103,7 +108,7 @@
     }
 }
 .iconc{
-    color: $color-boton;
+    color: $color-barraitem;
     transition: background-color 0.5s, color 0.5s;
     &:hover{
         color: red;

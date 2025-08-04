@@ -2,7 +2,7 @@
 @use "../Utilites/variables" as *;
 
 .subtitulo{
-    color: black;
+    color: $color-texto;
     font-size: larger;
     text-align: $alineacion;
     margin-top: 10px;

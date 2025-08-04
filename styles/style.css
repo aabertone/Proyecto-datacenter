@@ -5,7 +5,7 @@
 
 .titulo {
   text-align: center;
-  border: 2px solid #323333;
+  border: 2px solid #fff;
   border-radius: 10px;
   padding: 16px 24px;
   margin: 10px auto;
@@ -13,7 +13,7 @@
   transition: transform 0.5s;
 }
 .titulo a {
-  color: blue;
+  color: rgb(235, 213, 22);
   text-decoration: none;
 }
 .titulo:hover {
@@ -22,6 +22,7 @@
 
 body {
   font-family: "nunito-sans", sans-serif;
+  background-color: #1b1b1b;
 }
 
 main {
@@ -30,23 +31,41 @@ main {
 
 footer {
   background-color: #d3d3d3;
+  box-shadow: 0 0px 20px 10px rgb(0, 0, 0);
+  background: linear-gradient(to top, rgb(161, 160, 160) 0%, rgb(78, 77, 77) 80%);
   padding: 20px;
   text-align: center;
   position: static;
   width: 100%;
   margin-top: 20px;
 }
+footer p, footer h3 {
+  color: rgb(0, 0, 0);
+}
+footer p a {
+  color: gold;
+}
 
 .titulo-footer {
-  color: rgb(24, 1, 1);
+  color: rgb(0, 0, 0);
 }
 
 .barranav {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(78, 77, 77);
+  box-shadow: 0 10px 20px 0 rgb(0, 0, 0);
+  background: linear-gradient(to bottom, rgb(161, 160, 160) 0%, rgb(78, 77, 77) 80%);
+}
+.barranav div div ul li a {
+  color: gold;
+  font-weight: 700;
+}
+
+p, li, h3, h2 {
+  color: white;
 }
 
 .subtitulo {
-  color: black;
+  color: white;
   font-size: larger;
   text-align: center;
   margin-top: 10px;
@@ -165,6 +184,7 @@ footer {
   margin: auto;
   width: 100%;
   border-radius: 0;
+  color: black;
 }
 
 .info1 {
@@ -242,6 +262,7 @@ footer {
   width: 100%;
   border-radius: 0;
   text-align: center;
+  color: black;
 }
 
 .info5-text {
@@ -364,7 +385,12 @@ footer {
 .contenedor-formulario {
   width: 100%;
   max-width: none;
-  border: 2px solid #323333;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.contenedor-formulario h3 {
+  color: black;
 }
 
 .formulario {
@@ -451,7 +477,7 @@ footer {
 }
 
 .iconc {
-  color: blue;
+  color: gold;
   transition: background-color 0.5s, color 0.5s;
 }
 .iconc:hover {

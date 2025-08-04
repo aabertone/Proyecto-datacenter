@@ -3,7 +3,7 @@
 
 .titulo{
     text-align: $alineacion;
-    border: 2px solid #323333;
+    border: 2px solid #fff;
     border-radius: 10px;
     padding: 16px 24px;
     margin: 10px auto;
@@ -19,21 +19,42 @@
 }
 body {
     font-family: $tipografia;
+    background-color: $color-body;
 }
 main{
     margin: 10px;
 }
 footer{
     background-color: $color-footer;
+    box-shadow: 0 0px 20px 10px rgb(0, 0, 0);
+    background: linear-gradient(to top, $color-barranav2 0%, $color-barranav 80%);
     padding: 20px;
     text-align: $alineacion;
     position: static;
     width: $width;
     margin-top: 20px;
+    & p, h3{
+        color: $color-dudas;
+    }
+    & p a{
+        color: $color-barraitem;
+    }
+
 }
 .titulo-footer{
     color: $color-dudas;
 }
 .barranav{
     background-color: $color-barranav;
+    box-shadow: 0 10px 20px 0 rgb(0, 0, 0);
+    background: linear-gradient(to bottom, $color-barranav2 0%, $color-barranav 80%);
+    & div div ul li a{
+        color: $color-barraitem;
+        font-weight: 700;
+    }
 }
+p, li, h3, h2{
+    color: $color-texto;
+}
+
+
