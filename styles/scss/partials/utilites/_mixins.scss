@@ -4,3 +4,11 @@
   justify-content: $justify;
   align-items: $align;
 }
+@mixin info-style($color, $borderColor) {
+  border: solid 1px $borderColor;
+  border-radius: 10px;
+  background-color: $color;
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+}

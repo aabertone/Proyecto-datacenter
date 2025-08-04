@@ -10,41 +10,30 @@
     width: fit-content;
     transition: transform 0.5s;
     & a{
-        color: blue;
+        color: $color-titulo;
         text-decoration: none;
     }
     &:hover{
         transform: scale(1.1);
     }
 }
-
 body {
     font-family: $tipografia;
 }
-
 main{
-    flex: 1;
     margin: 10px;
 }
-
 footer{
-    background-color: #979292;
+    background-color: $color-footer;
     padding: 20px;
     text-align: $alineacion;
-    font-family: $tipografia;
     position: static;
     width: $width;
     margin-top: 20px;
 }
-
 .titulo-footer{
-    color: red;
-    font-family: $tipografia;
-}
-
-p{
-   font-family: $tipografia; 
+    color: $color-dudas;
 }
 .barranav{
-    background-color: rgb(34, 34, 34);
+    background-color: $color-barranav;
 }

@@ -25,27 +25,20 @@ body {
 }
 
 main {
-  flex: 1;
   margin: 10px;
 }
 
 footer {
-  background-color: #979292;
+  background-color: #d3d3d3;
   padding: 20px;
   text-align: center;
-  font-family: "nunito-sans", sans-serif;
   position: static;
   width: 100%;
   margin-top: 20px;
 }
 
 .titulo-footer {
-  color: red;
-  font-family: "nunito-sans", sans-serif;
-}
-
-p {
-  font-family: "nunito-sans", sans-serif;
+  color: rgb(24, 1, 1);
 }
 
 .barranav {
@@ -54,7 +47,6 @@ p {
 
 .subtitulo {
   color: black;
-  font-family: "nunito-sans", sans-serif;
   font-size: larger;
   text-align: center;
   margin-top: 10px;
@@ -65,14 +57,13 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 20px 0;
+  width: 90%;
+  margin: auto;
 }
 
 .foto-index {
   display: block;
   width: 100%;
-  max-width: 1000px;
   height: auto;
   margin: 0 auto;
 }
@@ -141,10 +132,39 @@ p {
   text-align: center;
 }
 .info-gen p {
-  text-align: center;
+  text-align: justify;
 }
 .info-gen li {
   margin: 10px;
+}
+
+.info-gen1, .info-gen3, .info-gen5 {
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(197, 182, 182, 0.295);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+}
+
+.info-gen2, .info-gen4 {
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(136, 163, 161, 0.329);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+}
+
+.info-gen6 {
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgb(114, 146, 216);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  border-radius: 0;
 }
 
 .info1 {
@@ -160,34 +180,98 @@ p {
   grid-area: info1-text;
   margin-top: 100px;
   margin-left: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(197, 182, 182, 0.295);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
 }
 
 .info2-text {
   grid-area: info2-text;
   margin-top: 50px;
   margin-left: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(136, 163, 161, 0.329);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
 }
 
 .info1-img {
   grid-area: info1-img;
+  display: flex;
+}
+.info1-img img {
+  width: 100%;
+  height: auto;
 }
 
 .info2-img {
   grid-area: info2-img;
-  max-width: 90%;
+  display: flex;
+}
+.info2-img img {
+  width: 100%;
+  height: auto;
 }
 
-.info3-text, .info4-text, .info5-text, .info6-text {
+.info3-text, .info4-text, .info5-text, .info6-text, .info8-text {
   text-align: center;
   margin-top: 10px;
 }
 
-.info4-img {
-  display: block;
-  width: 100%;
-  max-width: 1000px;
+.info4-img, .info7-img {
+  display: flex;
+  justify-content: center;
+}
+.info4-img img, .info7-img img {
+  width: 80%;
   height: auto;
-  margin: 0 auto;
+}
+
+.info-gen7 {
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgb(114, 146, 216);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+}
+
+.info5-text {
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(136, 163, 161, 0.329);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+}
+.info5-text p {
+  text-align: justify;
+}
+
+.info7-text {
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgba(197, 182, 182, 0.295);
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+}
+.info7-text p {
+  text-align: justify;
+}
+
+.video-ch {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
 }
 
 .subtitulo-imagenes {
@@ -204,6 +288,49 @@ p {
   text-align: center;
   font-size: 1.5em;
   margin-top: 10px;
+}
+
+.contenedor-carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contenedor-imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "imagen-diagrama1 imagen-diagrama2" "imagen-diagrama3 imagen-diagrama4";
+  gap: 20px;
+  place-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.contenedor-imagenes img {
+  display: block;
+  height: auto;
+  margin: auto;
+  border: solid;
+  width: 100%;
+}
+.contenedor-imagenes img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.imagen-diagrama1 {
+  grid-area: imagen-diagrama1;
+}
+
+.imagen-diagrama2 {
+  grid-area: imagen-diagrama2;
+}
+
+.imagen-diagrama3 {
+  grid-area: imagen-diagrama3;
+}
+
+.imagen-diagrama4 {
+  grid-area: imagen-diagrama4;
 }
 
 .subtitulo-formulario {
@@ -274,12 +401,12 @@ p {
 .formulario input:focus,
 .formulario textarea:focus,
 .formulario select:focus {
-  border: 1.5px solid #2a7ae2;
+  border: 1.5px solid blue;
   outline: none;
 }
 
 .formulario button, .formulario input[type=submit] {
-  background: #2a7ae2;
+  background: blue;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -298,12 +425,7 @@ p {
   display: flex;
 }
 
-.contacto-izquierdo {
-  width: 50%;
-  border-right: 1px solid #323333;
-}
-
-.contacto-derecho {
+.contacto-mail {
   width: 100%;
   padding: 10px;
 }
@@ -329,7 +451,7 @@ p {
 }
 
 .iconc {
-  color: #2a7ae2;
+  color: blue;
   transition: background-color 0.5s, color 0.5s;
 }
 .iconc:hover {

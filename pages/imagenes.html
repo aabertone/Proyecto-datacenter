@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagenes</title>
+    <meta name="description" content="Visita nuestra sección de imágenes para ver fotos de data centers, aprende sobre su estructura y funcionamiento.">
+    <meta name="keywords" content="data centers, imágenes, fotos, tecnología, infraestructura">
+    <title>Data Center | Imagenes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -17,63 +19,72 @@
             <a href="../index.html">Data centers</a>
         </h1>
         <nav class="navbar navbar-expand-lg border-bottom border-body barranav" data-bs-theme="dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="acercade.html">Acerca de</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="info.html">Información</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Imagenes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand" href="#"></a>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Imagenes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </nav>
     </header>
     
     <main data-aos="zoom-in">
         <h2 class="titulo-imagenes">Imagenes</h2>
-        <p class="subtitulo-imagenes">Disfruta de las imagenes</p>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/fotos/acercade.jpg" class="d-block w-100" alt="...">
+            <p class="subtitulo-imagenes">Disfruta de las imagenes</p>
+                <div class="contenedor-carousel">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/fotos/acercade.jpg" class="d-block w-100" alt="foto que muestra un data center desde un pasilloo con una terminal de monitoreo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/fotos/chica.jpg" class="d-block w-100" alt="foto de una chica trabajando en un data center">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/fotos/cableado.jpg" class="d-block w-100" alt="foto que muestra una patchera con muchos cables">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/fotos/discos.jpg" class="d-block w-100" alt="foto que muestra discos duros funcionando en racks">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../assets/fotos/chica.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/fotos/cableado.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../assets/fotos/discos.jpg" class="d-block w-100" alt="...">
-                </div>
+        <br>
+        <p class="subtitulo-imagenes">Aqui te mostramos fotos de diagramas tipicos de data</p>
+            <div class="contenedor-imagenes">
+                <img src="../assets/fotos/sala.jpg" alt="Diagrama de sala de data center tradicional con flujo de aire" class="imagen-diagrama1">
+                <img src="../assets/fotos/confinado.png" alt="Diagrama de sala confinada que muestra equipos inrow y un pasillo confinado mas el flujo de aire" class="imagen-diagrama2">
+                <img src="../assets/fotos/flujo.png" alt="Diagrama de flujo de aire en un data tradicional" class="imagen-diagrama3">
+                <img src="../assets/fotos/hotspots.jpg" alt="Diagrama de hotspots en racks" class="imagen-diagrama4">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        
     </main>
 
     <footer>

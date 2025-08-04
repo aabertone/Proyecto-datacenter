@@ -11,7 +11,6 @@
     margin-top: 10px;
 
 }
-
 .descripcion-form{
     width: 70%;
     max-width: none;
@@ -33,7 +32,6 @@
     max-width: none;
     border: 2px solid #323333;
 }
-
 .formulario {
     width: $width;
     max-width: none;
@@ -85,13 +83,8 @@
 
 .contenedor-contacto{
     display: flex;
-}
-.contacto-izquierdo{
-    width: 50%;
-    border-right: 1px solid #323333;
-    
-}
-.contacto-derecho{
+} 
+.contacto-mail{
     width: 100%;
     padding: 10px;
 }

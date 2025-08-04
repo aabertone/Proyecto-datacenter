@@ -1,6 +1,4 @@
-@use "../Base/tipografia" as *;
 @use "../Utilites/variables" as *;
-
 
 .acercade-section{
     display: grid;
@@ -15,19 +13,16 @@
     max-width: 1100px;
     margin: $margen;
 }
-
 .subtitulo-acercade{
     grid-area: subtitulo-acercade;
     font-size: $fuente;
     text-align: $alineacion;
     margin: 10px 0 0 0;
 }
-
 .texto-acercade{
     grid-area: texto-acercade;
     align-self: start;
 }
-
 .imagen-acercade{
     grid-area: imagen-acercade;
     width: $width;

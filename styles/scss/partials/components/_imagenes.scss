@@ -1,8 +1,7 @@
 @use "../Utilites/variables" as *;
 
 .subtitulo-imagenes{
-    text-align: $alineacion;
-    
+    text-align: $alineacion;    
 }
 .carousel-control-prev-icon{
     background-color: rgb(25, 35, 185);
@@ -16,4 +15,43 @@
     text-align: $alineacion;
     font-size: $fuente;
     margin-top: 10px;
+}
+.contenedor-carousel{
+    width: 80%;
+    margin: $margen;
+}
+.contenedor-imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "imagen-diagrama1 imagen-diagrama2"
+    "imagen-diagrama3 imagen-diagrama4";
+    gap: 20px;
+    place-items: center;
+    margin: $margen;
+    padding: 10px;
+    & img{
+            display: block;
+            height: auto;
+            margin: auto;
+            border: solid;
+            width: 100%;
+        }
+    & img:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+.imagen-diagrama1 {
+    grid-area: imagen-diagrama1;  
+}
+.imagen-diagrama2 {
+    grid-area: imagen-diagrama2;
+}
+.imagen-diagrama3 {
+    grid-area: imagen-diagrama3;
+}
+.imagen-diagrama4 {
+    grid-area: imagen-diagrama4;
 }

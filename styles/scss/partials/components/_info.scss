@@ -10,11 +10,22 @@
         text-align: $alineacion;
     }
     & p {
-        text-align: $alineacion;
+        text-align: justify;
     }
     & li{
         margin: 10px;
     }
+}
+.info-gen1, .info-gen3, .info-gen5{
+    @include mixins.info-style($info-color1, $info-color3);
+}
+.info-gen2, .info-gen4 {
+    @include mixins.info-style($info-color2, $info-color3);
+}
+.info-gen6 {
+    @include mixins.info-style($color-banners, $info-color3);
+    width: 100%;
+    border-radius: 0; 
 }
 .info1{
     display: grid;
@@ -30,27 +41,62 @@
     grid-area: info1-text;
     margin-top: 100px;
     margin-left: 10px;
+    @include mixins.info-style($info-color1, $info-color3);
 }
 .info2-text{
     grid-area: info2-text;
     margin-top: 50px;
     margin-left: 10px;
+    @include mixins.info-style($info-color2, $info-color3);
 }
 .info1-img {
     grid-area: info1-img;
+    display: flex;
+    & img{
+        width: $width;
+        height: auto;
+    }
 }
 .info2-img{
     grid-area: info2-img;
-    max-width: 90%;
+    display: flex;
+    & img{
+        width: $width;
+        height: auto;
+    }
 }
-.info3-text, .info4-text, .info5-text, .info6-text {
+.info3-text, .info4-text, .info5-text, .info6-text, .info8-text {
     text-align: $alineacion;
     margin-top: 10px;
 }
-.info4-img {
-    display: block;
-    width: $width;
-    max-width: 1000px;
-    height: auto;
-    margin: $margen;
+.info4-img, .info7-img {
+    display: flex;
+    justify-content: $alineacion;
+    & img{
+        width: 80%;
+        height: auto;      
+    }
+}
+.info-gen7 {
+    @include mixins.info-style($color-banners, $info-color3);
+    width: 100%;
+    border-radius: 0;
+    text-align: $alineacion; 
+}
+.info5-text {
+    @include mixins.info-style($info-color2, $info-color3);
+    & p {
+        text-align: justify;
+    }
+}
+.info7-text {
+    @include mixins.info-style($info-color1, $info-color3);
+    & p {
+        text-align: justify;
+    }
+}
+.video-ch {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
 }
