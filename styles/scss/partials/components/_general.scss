@@ -21,8 +21,18 @@ body {
     font-family: $tipografia;
     background-color: $color-body;
 }
+header{
+    background-color: $color-body;
+    position: fixed;
+    width: $width;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 main{
-    margin: 10px;
+    margin-top: 180px;
+    margin-inline: 10px;
+    
 }
 footer{
     background-color: $color-footer;
@@ -56,5 +66,6 @@ footer{
 p, li, h3, h2{
     color: $color-texto;
 }
+
 
 
